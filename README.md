@@ -21,39 +21,41 @@ Zaprojektowany ze szczególnym uwzględnieniem środowiska graficznego **Xfce w 
 * 📊 **Monitor stanu na żywo:**
   * Stały pasek na dole okna informujący o działającym procesie Redshift, aktywnych parametrach oraz przycisk szybkiego wyłączenia filtra.
 
+# 📖 INSTRUKCJA OBSŁUGI I INSTALACJI
+## Program: Kontroler Redshift GTK
+**System:** Linux Mint (edycja Xfce) / Ubuntu / Debian
+
 ---
 
+## 1. Wymagania i instalacja pakietów
 
+Przed pierwszym uruchomieniem programu upewnij się, że w systemie zainstalowane są niezbędne narzędzia.
 
-📖 INSTRUKCJA OBSŁUGI I INSTALACJI
+1. Otwórz **Terminal** (skrót klawiszowy: `Ctrl + Alt + T`).
+2. Wklej poniższe polecenie i naciśnij `Enter` (system poprosi o hasło):
 
-Program: Kontroler Redshift GTK
-
-System: Linux Mint (edycja Xfce) / Ubuntu / Debian
-
-1. Wymagania i instalacja pakietów
-
-Przed pierwszym uruchomieniem programu upewnij się, że w systemie zainstalowane
-są niezbędne narzędzia.
-
-1.  Otwórz Terminal (skrót klawiszowy: Ctrl + Alt + T).
-2.  Wklej poniższe polecenie i naciśnij Enter (system poprosi o hasło):
-
+```bash
 sudo apt update && sudo apt install -y redshift python3-gi gir1.2-gtk-3.0 procps
+```
 
-2. Pierwsze uruchomienie
+---
 
-1.  Umieść plik redshift_control.py w wybranym folderze (np. w swoim folderze
-    domowym lub w Dokumenty).
-2.  Nadaj plikowi prawa do uruchamiania:
-      - Kliknij na plik prawym przyciskiem myszy ➔ Właściwości ➔ zakładka
-        Uprawnienia ➔ zaznacz „Zezwolenie na wykonywanie pliku jako programu”,
-        lub w terminalu:
-    chmod +x redshift_control.py
-3.  Uruchom program:
-    ./redshift_control.py
+## 2. Pierwsze uruchomienie
 
-💡 Ważne: Podczas pierwszego uruchomienia program automatycznie utworzy skrót w
-menu Whisker (Menu Start). Od tego momentu możesz go wyszukiwać w menu
-systemowym pod nazwą Kontroler Redshift i uruchamiać bez otwierania terminala.
+1. Umieść plik `redshift_control.py` w wybranym folderze (np. w swoim folderze domowym lub w `Dokumenty`).
+2. Nadaj plikowi prawa do uruchamiania:
+   * Kliknij na plik prawym przyciskiem myszy ➔ **Właściwości** ➔ zakładka **Uprawnienia** ➔ zaznacz **„Zezwolenie na wykonywanie pliku jako programu”**, lub w terminalu:
+   ```bash
+   chmod +x redshift_control.py
+   ```
+3. Uruchom program:
+   ```bash
+   ./redshift_control.py
+   ```
+
+> 💡 **Ważne:** Podczas pierwszego uruchomienia program **automatycznie utworzy skrót w menu Whisker (Menu Start)**. Od tego momentu możesz go wyszukiwać w menu systemowym pod nazwą **Kontroler Redshift** i uruchamiać bez otwierania terminala.
+
+
+
+
 
