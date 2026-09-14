@@ -23,26 +23,37 @@ Zaprojektowany ze szczególnym uwzględnieniem środowiska graficznego **Xfce w 
 
 ---
 
-## 📦 Wymagania systemowe
 
-Program wymaga systemu operacyjnego Linux z serwerem X11 (np. **Linux Mint Xfce**, Ubuntu, Debian) oraz zainstalowanych pakietów:
+
+📖 INSTRUKCJA OBSŁUGI I INSTALACJI
+
+Program: Kontroler Redshift GTK
+
+System: Linux Mint (edycja Xfce) / Ubuntu / Debian
 
 1. Wymagania i instalacja pakietów
-Przed pierwszym uruchomieniem programu upewnij się, że w systemie zainstalowane są niezbędne narzędzia.
-Otwórz Terminal (skrót klawiszowy: Ctrl + Alt + T).
-Wklej poniższe polecenie i naciśnij Enter (system poprosi o hasło):
-code
-Bash
+
+Przed pierwszym uruchomieniem programu upewnij się, że w systemie zainstalowane
+są niezbędne narzędzia.
+
+1.  Otwórz Terminal (skrót klawiszowy: Ctrl + Alt + T).
+2.  Wklej poniższe polecenie i naciśnij Enter (system poprosi o hasło):
+
 sudo apt update && sudo apt install -y redshift python3-gi gir1.2-gtk-3.0 procps
+
 2. Pierwsze uruchomienie
-Umieść plik redshift_control.py w wybranym folderze (np. w swoim folderze domowym lub w Dokumenty).
-Nadaj plikowi prawa do uruchamiania:
-Kliknij na plik prawym przyciskiem myszy ➔ Właściwości ➔ zakładka Uprawnienia ➔ zaznacz „Zezwolenie na wykonywanie pliku jako programu”, lub w terminalu:
-code
-Bash
-chmod +x redshift_control.py
-Uruchom program:
-code
-Bash
-./redshift_control.py
-💡 Ważne: Podczas pierwszego uruchomienia program automatycznie utworzy skrót w menu Whisker (Menu Start). Od tego momentu możesz go wyszukiwać w menu systemowym pod nazwą Kontroler Redshift i uruchamiać bez otwierania terminala.
+
+1.  Umieść plik redshift_control.py w wybranym folderze (np. w swoim folderze
+    domowym lub w Dokumenty).
+2.  Nadaj plikowi prawa do uruchamiania:
+      - Kliknij na plik prawym przyciskiem myszy ➔ Właściwości ➔ zakładka
+        Uprawnienia ➔ zaznacz „Zezwolenie na wykonywanie pliku jako programu”,
+        lub w terminalu:
+    chmod +x redshift_control.py
+3.  Uruchom program:
+    ./redshift_control.py
+
+💡 Ważne: Podczas pierwszego uruchomienia program automatycznie utworzy skrót w
+menu Whisker (Menu Start). Od tego momentu możesz go wyszukiwać w menu
+systemowym pod nazwą Kontroler Redshift i uruchamiać bez otwierania terminala.
+
