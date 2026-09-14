@@ -27,15 +27,17 @@ Zaprojektowany ze szczególnym uwzględnieniem środowiska graficznego **Xfce w 
 
 Program wymaga systemu operacyjnego Linux z serwerem X11 (np. **Linux Mint Xfce**, Ubuntu, Debian) oraz zainstalowanych pakietów:
 
-```bash
-sudo apt update
-sudo apt install redshift python3-gi gir1.2-gtk-3.0 procps
-Pobierz repozytorium:
+1. Wymagania i instalacja pakietów
+Przed pierwszym uruchomieniem programu upewnij się, że w systemie zainstalowane są niezbędne narzędzia.
+Otwórz Terminal (skrót klawiszowy: Ctrl + Alt + T).
+Wklej poniższe polecenie i naciśnij Enter (system poprosi o hasło):
 code
 Bash
-git clone https://gitlab.com/TWOJA_NAZWA/redshift-control.git
-cd redshift-control
-Nadaj uprawnienia do uruchamiania:
+sudo apt update && sudo apt install -y redshift python3-gi gir1.2-gtk-3.0 procps
+2. Pierwsze uruchomienie
+Umieść plik redshift_control.py w wybranym folderze (np. w swoim folderze domowym lub w Dokumenty).
+Nadaj plikowi prawa do uruchamiania:
+Kliknij na plik prawym przyciskiem myszy ➔ Właściwości ➔ zakładka Uprawnienia ➔ zaznacz „Zezwolenie na wykonywanie pliku jako programu”, lub w terminalu:
 code
 Bash
 chmod +x redshift_control.py
@@ -43,4 +45,4 @@ Uruchom program:
 code
 Bash
 ./redshift_control.py
-💡 Wskazówka: Po pierwszym uruchomieniu program automatycznie utworzy skrót w menu systemowym (Whisker Menu w Linux Mint), dzięki czemu od tej pory można go uruchamiać jak każdą inną aplikację z menu.
+💡 Ważne: Podczas pierwszego uruchomienia program automatycznie utworzy skrót w menu Whisker (Menu Start). Od tego momentu możesz go wyszukiwać w menu systemowym pod nazwą Kontroler Redshift i uruchamiać bez otwierania terminala.
